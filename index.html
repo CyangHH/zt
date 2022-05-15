@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js no-svg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Cache-Control" content="no-transform " />
+<title>田字格字帖 米字格字帖 支持笔顺 支持拼音 在线字帖生成器--zt.cyang.net</title>
+<meta name="keywords" content="田字格字帖,字帖,字帖打印,笔顺字帖,儿童田字格打印" />
+<meta name="description" content="7年老牌田字格字帖生成工具，可以在线生成田字格字帖、米字格字帖，支持任意汉字定制，并支持笔顺，支持拼音，支持田英章字体、庞中华字体，田字格作是最为精简的练习格，被小学低年级语文课本作为生字词的展示方式。小学时期，特别是低年级阶段，是学习汉字书写的关键时期，使用本系统生成田字格字帖，让低年级小学生逐渐将汉字写规范，养成正确的汉字笔顺书写习惯，给以后的语文学习和汉字书写打下坚实的基础。" />
+<style>
+body,div,p,h1{ padding:0; margin:0; list-style:none;}
+body{color:#222; font-size:14px; font-family:"微软雅黑";padding-top:10px;padding-bottom:56px;}
+div{width: 95%;max-width:980px; margin:0px auto; line-height:42px;}
+a{color: #222;text-decoration: none}
+textarea{width: 95%;max-width:950px; height:180px;border:1px solid #ccc;border-radius: 8px;padding:10px;outline: none;}
+div.btn{ text-align:center; height:60px; line-height:50px; }
+div.btn input{ width:88px; height:33px; font-size:18px;}
+p{ margin-left:28px;}
+div.top{width: 100%;max-width:980px; height:45px; margin:0px auto; padding:12px 0px;}
+div.top h1{ font-size:32px; font-weight:bold;}
+.green{ color:#009900;}
+.red{ color:#cc0000;}
+.info{ padding:12px 8px;border:1px dashed #ccc; line-height:28px;border-radius: 8px;}
+.info strong, #description strong{color:red;font-size:16px;}
+.info span{font-size:16px;}
+#prompt h3{padding: 3px;margin: 0;}
+#description{padding: 12px 0px;line-height: 28px;}
+.input{width: 95%;max-width:360px;height: 26px; border-radius:5px; border:1px solid #ccc;padding: 1px 6px;}
+</style>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?655bbf9a962828d920723650b0ecc841";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</head>
+
+<body>
+
+<div class="top"><h1>田字格字帖 米字格字帖 支持笔顺 支持拼音 在线字帖生成器</h1></div>
+
+<form action="tzg.php" method="post" target="_blank">
+<div id="description">
+	本站基于开源项目:<a href="https://github.com/bunian/tianzigebishun" target="_blank"> https://github.com/bunian/tianzigebishun </a><br>
+	田字格米字格字帖生成器，低年级学生练字神器，<strong>共收录9574个常用汉字！</strong><br>
+	本系统可以在线生成田字格、米字格<span>完全免费</span>。田字格是最精简的练习格，被小学低年级语文课本作为生字词的展示方式。小学时期，特别是低年级阶段，是学习汉字书写的关键时期，使用本站生成田字格字帖，让低年级小学生逐渐将汉字写规范，养成正确的汉字笔顺书写习惯，给以后的语文学习和汉字书写打下坚实的基础。<br><strong><a href="scb.html" target="_blank">2021年1月更新：*附小学生常用汉字分年级生字表（共计2513个汉字）</a></strong><br><strong><a href="https://github.com/jifei/Pinyin" target="_blank">2022年5月更新：添加注音功能! Thanks for https://github.com/jifei/Pinyin </a></strong><br><br>
+	<strong>第一次使用建议阅读下方教程!</strong>
+	
+	</div>
+	
+<div id="prompt"><h3>请输入想要生成的汉字：</h3></div>
+<div><textarea name="words">锄禾日当午，汗滴禾下土。&#10;谁知盘中餐，粒粒皆辛苦。</textarea></div>
+
+
+<div>田格类型：
+<input type="radio" name="types" value="tzg" checked  >田字格&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="types" value="mzg">米字格&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div>田格颜色：
+<input type="radio" name="bgcolor" value="green" ><span class="green">绿色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="bgcolor" value="black" checked >黑色&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="bgcolor" value="red"><span class="red">红色
+</span>
+</div>
+
+<div>文字颜色：
+<input type="radio" name="zcolor" value="green" ><span class="green">绿色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="zcolor" value="black" checked >黑色&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="zcolor" value="red"><span class="red">红色</span>
+</div>
+
+<div>描红背景：
+<input type="radio" name="fcolor" value="1" ><span style="color:#888888">非常深</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="fcolor" value="2" ><span style="color:#999999">深</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="fcolor" value="3" ><span style="color:#a0a0a0">较深</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="fcolor" value="4"> <span style="color:#aaaaaa">略浅</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="fcolor" value="5" checked><span style="color:#b8b8b8">适中</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="fcolor" value="6"><span style="color:#cccccc">非常浅</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--input type="radio" name="fcolor" value="10"><span style="color:#ffffff; background:#666;padding:0px 3px;">白色（不可见）</span-->
+</div>
+
+<div id="bsfill" style="">笔顺剩余填充：
+<input type="radio" name="bs" value="1"><span>是</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="bs" value="0" checked="">否</div>
+
+<div id="pyfill" style="">显示拼音：
+<input type="radio" name="py" value="1"><span>是</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="py" value="0" checked="">否</div>
+
+<div>自定义页头：<input type="text" name="title" value="田字格字帖生成器 网址：zt.cyang.net" class="input"></div>
+
+<div class="btn"><input type="submit" value="点击生成" ></div>
+</form>
+
+<div class="info">
+<strong>教程：</strong><br>
+1、为保证打印效果，请使用微软Edge浏览器、谷歌浏览器，建议字体为楷体；<br>
+2、输入想打印的文字，去除空格，逗号句号等常见符号会自动过滤；<br>
+3、设置选项后，点击生成按钮；<br>
+4、打印设置勾选打印背景图片（*注：如下图）。
+<br>
+<img src="img/print.png" style="
+    max-width: 300px;
+    width: 100%;
+"><br><br>
+<strong>效果图：</strong><br>
+<img src="img/xg4.png">
+<br>
+</p>
+</div>
+
+</body>
+</html>
