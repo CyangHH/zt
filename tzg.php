@@ -115,7 +115,7 @@ for($ihz=0;$ihz<count($hz['0']);$ihz++){
 	{
 		//print_r($hz['0'][$ihz]);
 		$py_str=Pinyin::getPinyin($hz['0'][$ihz]);
-		echo '<li class="svg" style="positon: relative;"><span style="font:2px bolder;display:block;position:absolute;width:80px;color:rgb('.$color.')">'.$py_str.'</span><svg width="54" height="54" style="margin-top: -11px;"><g transform="translate(-2.9,48) scale(0.058, -0.0572)">';
+		echo '<li class="svg" style="positon: relative;"><span style="font:13px bolder;display:block;position:absolute;width:80px;color:rgb('.$color.')">'.$py_str.'</span><svg width="54" height="54" style="margin-top: -11px;"><g transform="translate(-2.9,48) scale(0.058, -0.0572)">';
 	}
 	else
 	{
